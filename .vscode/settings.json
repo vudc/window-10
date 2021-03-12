@@ -1,0 +1,16 @@
+{
+    "workbench.tree.indent": 30,
+    "workbench.colorCustomizations": {},
+    "editor.renderIndentGuides": true,
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.autoClosingQuotes": "always",
+
+    "editor.insertSpaces": true,
+
+    "editor.detectIndentation": false,
+
+    "editor.tabSize": 4,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "typescript.preferences.importModuleSpecifier": "relative"
+}
