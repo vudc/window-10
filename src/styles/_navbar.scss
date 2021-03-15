@@ -1,0 +1,12 @@
+.nav-item {
+    padding: 0 6px;
+    display: flex;
+    text-align: center;
+    transition: all 0.2s;
+    align-items: center;
+    cursor:alias;
+    height: 100%;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}

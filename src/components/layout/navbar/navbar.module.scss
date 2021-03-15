@@ -10,7 +10,7 @@
 
 .wrapper {
     width: 100%;
-    height: 45px;
+    height: 35px;
     background-color: #070e17;
     position: absolute;
     bottom: 1px;
@@ -22,7 +22,7 @@
         .nav-item {
             @include nav-item;
             width: 50px;
-            padding: 2px 15px;
+            padding: 2px 16px;
             img {
                 width: 100%;
             }
@@ -41,10 +41,7 @@
             padding: 0 6px;
             text-align: center;
         }
-        .language {
-            padding: 0 6px;
-            text-align: center;
-        }
+       
 
         .clear {
             width: 5px;

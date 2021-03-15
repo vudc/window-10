@@ -26,10 +26,10 @@ const Navbar = () => {
             </div>
         
             <div className={styles.right}>
-                <div className={`${styles['nav-item']} ${styles.language}`}><SwichLanguage /> </div>
+                <SwichLanguage /> 
                 <div className={`${styles['nav-item']} ${styles.date}`}>
-                    4:22 PM <br />
-                    3/15/2021
+                    4:22 PM 
+ 
                 </div>
 
                 <div className={styles.clear}>  </div>

@@ -1,0 +1,21 @@
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+.nav-modal {
+
+    color: white;
+
+    .modal-dialog {
+        position: fixed;
+        bottom: 35px;
+        margin: 0;
+        right: 0;
+      
+    }
+
+    .modal-content {
+        background-color: $primary-color;
+        border-radius: 0;
+    }
+}
