@@ -1,12 +1,14 @@
-import Header from './header';
+
 import styles from './layout.module.scss'
+import Navbar from './navbar/navbar'
 
 
 const Layout = ({ children }: any) => {
     return (
         <div className={styles.wrapper}>
-            <Header />
-    
+         {children}
+        <Navbar />
+        
         </div>
     );
 };
