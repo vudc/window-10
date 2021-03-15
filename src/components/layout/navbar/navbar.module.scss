@@ -1,3 +1,13 @@
+@mixin nav-item {
+    display: flex;
+    transition: all 0.2s;
+    align-items: center;
+    height: 100%;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
 .wrapper {
     width: 100%;
     height: 45px;
@@ -7,28 +17,43 @@
     border-bottom: 1px solid gray;
     display: flex;
     .left {
+
         display: flex;
         .nav-item {
-            display: flex;
-            transition: all 0.2s;
-            /* align-self: center;    <---- REMOVE */
-            align-items: center; /* <---- NEW    */
+            @include nav-item;
             width: 50px;
-
-            height: 100%;
             padding: 2px 15px;
             img {
                 width: 100%;
             }
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
         }
     }
+    
     .right {
+
+        color: white;
         align-items: center;
         display: flex;
         flex: 1 0 auto;
         justify-content: flex-end;
+
+        .date {
+            padding: 0 6px;
+            text-align: center;
+        }
+        .language {
+            padding: 0 6px;
+            text-align: center;
+        }
+
+        .clear {
+            width: 5px;
+            height: 100%;
+            border-left: 1px solid gray;
+        }
     }
+}
+
+.nav-item {
+    @include nav-item;
 }
