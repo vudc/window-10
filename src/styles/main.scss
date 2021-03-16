@@ -9,3 +9,9 @@ body {
 .white-box {
     background-color: white;
 }
+
+.navbar-hover {
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}

@@ -1,7 +1,7 @@
 .modal-content {
 
-    width: 240px;
-    padding: 0;
+    width: 260px;
+    padding: 0 !important;
     .item {
         padding:12px 12px;
         .title {
@@ -11,8 +11,8 @@
         .text {
             font-size: 14px;
         }
-        &:hover{
-            background-color: blue;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
         }
     }
     hr {

@@ -1,0 +1,45 @@
+.notification {
+    padding: 0 16px !important;
+    img {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+.modal-content {
+    height: calc(100vh - 35px);
+    width: 400px;
+
+    .modal-wrapper {
+        position: relative;
+        height: 100%;
+
+        .title {
+            color: #a3a3a3;
+            font-size: 16px;
+        }
+        .utility-container {
+            position: absolute;
+            width: 100%;
+            bottom: 0%;
+
+            .utility-item {
+                background-color: #3f4046;
+                position: relative;
+                margin: 2px;
+                padding-top: 4px;
+                padding-left: 4px;
+                height: 64px;
+                img {
+                    width: 16px;
+                }
+                p {
+                    position: absolute;
+                    bottom: 0;
+                    font-size: 11px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+}

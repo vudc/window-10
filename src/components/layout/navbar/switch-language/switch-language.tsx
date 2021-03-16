@@ -26,14 +26,14 @@ const SwitchLanguage = () => {
                     <div className={styles.item}>
                         <Row >
                             <Col md="3" className={styles.title}>VIE</Col>
-                            <Col md="9" className={styles.text}>Vietnamese  <br /> Vietnamese Telxe</Col>
+                            <Col md="9" className={styles.text}>Vietnamese  <br /> Vietnamese Telex</Col>
                         </Row>
                     </div>
 
                     <hr />
                     <div className={styles.item}>
                         <Row >
-                            <Col md="3" className={styles.title}>VIE</Col>
+                            <Col md="3" className={styles.title}>SS</Col>
                             <Col md="9" className={styles.text}>Language references </Col>
                         </Row>
                     </div>

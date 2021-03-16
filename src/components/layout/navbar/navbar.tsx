@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './navbar.module.scss'
 import SwichLanguage from './switch-language/switch-language'
+import Notification from './notification/notification'
 
 const WINDOW_START_SRC = "/assets/icons/window.svg"
 const WINDOW_START_HOVER_SRC = "/assets/icons/window-hover.svg"
@@ -31,7 +32,7 @@ const Navbar = () => {
                     4:22 PM 
  
                 </div>
-
+                <Notification />
                 <div className={styles.clear}>  </div>
             </div>
         </div>
