@@ -24,6 +24,7 @@
             bottom: 0%;
 
             .utility-item {
+                border: 1px solid #3f4046;
                 background-color: #3f4046;
                 position: relative;
                 margin: 2px;
@@ -38,6 +39,11 @@
                     bottom: 0;
                     font-size: 11px;
                     margin-bottom: 4px;
+                }
+                &:hover {
+                    border: 1px solid gray;
+                    background-color: #7a7a7ad8;
+                    cursor: pointer;
                 }
             }
         }

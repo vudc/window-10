@@ -107,8 +107,8 @@ const Notification = () => {
                         <div className={styles['utility-container']}>
                             <p>Collapse</p>
                             <Row noGutters>
-                                {items.map((elt: Utility) => (
-                                    <Col md="3">
+                                {items.map((elt: Utility, index: number) => (
+                                    <Col md="3" key={index}>
                                         <div className={styles['utility-item']}>
                                             <img src={elt.icon} /> <p>{elt.label}</p>
                                         </div>
