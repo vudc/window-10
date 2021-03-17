@@ -1,12 +1,17 @@
 .nav-item {
+    height: 100%;
     padding: 0 6px;
     display: flex;
     text-align: center;
     transition: all 0.2s;
     align-items: center;
-    cursor:alias;
-    height: 100%;
+    cursor: default;
+    
     &:hover {
         background-color: rgba(255, 255, 255, 0.1);
+    }
+    img {
+        height: 18px;
+        width: 18px;
     }
 }

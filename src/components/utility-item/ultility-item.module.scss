@@ -1,0 +1,23 @@
+.utility {
+    border: 1px solid #3f4046;
+    background-color: #3f4046;
+    position: relative;
+    margin: 2px;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 64px;
+    img {
+        width: 16px;
+    }
+    p {
+        position: absolute;
+        bottom: 0;
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+    &:hover {
+        border: 1px solid gray;
+        background-color: #7a7a7ad8;
+        cursor: pointer;
+    }
+}

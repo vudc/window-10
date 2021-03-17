@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './notification.module.scss'
 import { Modal, Col, Row } from 'react-bootstrap'
+import UltilityItem  from 'components/utility-item'
 
 interface Utility {
     icon: string
@@ -64,7 +65,7 @@ const items: Utility[] = [
         label: 'Flight mode',
         active: true
     },
-    
+
     {
         icon: '/assets/icons/flight.ico',
         label: 'Flight mode',
@@ -89,7 +90,7 @@ const items: Utility[] = [
         icon: '/assets/icons/flight.ico',
         label: 'Flight mode',
         active: true
-    },
+    }
 ]
 
 const Notification = () => {
@@ -106,12 +107,11 @@ const Notification = () => {
                         <p className={styles.title}>No new notifications</p>
                         <div className={styles['utility-container']}>
                             <p>Collapse</p>
+                            
                             <Row noGutters>
                                 {items.map((elt: Utility, index: number) => (
                                     <Col md="3" key={index}>
-                                        <div className={styles['utility-item']}>
-                                            <img src={elt.icon} /> <p>{elt.label}</p>
-                                        </div>
+                                        <UltilityItem {...elt}/>
                                     </Col>
                                 ))}
                             </Row>

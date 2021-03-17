@@ -5,10 +5,11 @@
 .nav-modal {
 
     color: white;
-
+ 
     .modal-dialog {
         position: fixed;
         bottom: 35px;
+        border: 1px solid rgba(65, 65, 65, 0.966);
         margin: 0;
         right: 0;
       
@@ -18,4 +19,15 @@
         background-color: $primary-color;
         border-radius: 0;
     }
+}
+
+
+.vudc-modal {
+    position: fixed;
+    bottom: 35px;
+    margin: 0;
+    right: 0;
+    background-color: $primary-color;
+    border-radius: 0;
+    color: white;
 }

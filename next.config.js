@@ -1,10 +1,12 @@
 const isProd = process.env.NODE_ENV === 'production'
 
+const prefixPath = isProd ? '/window-10' : ''
+
 module.exports = {
-    basePath: '/window-10',
-    assetPrefix: '/window-10' ,
+    basePath: prefixPath,
+    assetPrefix: prefixPath ,
 
     env: {
-        assetPath: '/window-10'
+        assetPath: prefixPath
     }
 }

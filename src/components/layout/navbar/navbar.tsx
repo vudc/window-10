@@ -2,6 +2,8 @@ import { useState } from 'react'
 import styles from './navbar.module.scss'
 import SwichLanguage from './switch-language/switch-language'
 import Notification from './notification/notification'
+import Speaker from './speaker/speaker'
+import Network from './network/network'
 
 const WINDOW_START_SRC = "/assets/icons/window.svg"
 const WINDOW_START_HOVER_SRC = "/assets/icons/window-hover.svg"
@@ -27,6 +29,8 @@ const Navbar = () => {
             </div>
         
             <div className={styles.right}>
+                <Network />
+                <Speaker />
                 <SwichLanguage /> 
                 <div className={`${styles['nav-item']} ${styles.date}`}>
                     4:22 PM 

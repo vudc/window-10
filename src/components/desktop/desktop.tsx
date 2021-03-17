@@ -14,18 +14,22 @@ const shortcuts = [
 ]
 
 const Desktop = () => {
-
     const [activeShortcut, setActiveShortcut] = useState('')
 
     const onShortcutClick = (label: string) => {
-        console.log(label)
         setActiveShortcut(label)
     }
 
     return (
         <div className={styles.desktop}>
             {shortcuts.map((elt, index) => (
-                <Shortcut onClick={onShortcutClick} key={index} icon={process.env.assetPath + elt.icon} label={elt.label} active={activeShortcut === elt.label} />
+                <Shortcut
+                    onClick={onShortcutClick}
+                    key={index}
+                    icon={process.env.assetPath + elt.icon}
+                    label={elt.label}
+                    active={activeShortcut === elt.label}
+                />
             ))}
         </div>
     )
