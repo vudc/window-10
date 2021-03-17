@@ -1,0 +1,24 @@
+.shortcut {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    
+    img {
+        width: 70%;
+    }
+    p {
+        color: white;
+        cursor: context-menu;
+    }
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

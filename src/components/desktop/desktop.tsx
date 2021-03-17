@@ -1,4 +1,6 @@
 import Shortcut from './shortcut/shortcut'
+import styles from './desktop.module.scss'
+import { useState } from 'react'
 
 const shortcuts = [
     {
@@ -12,10 +14,18 @@ const shortcuts = [
 ]
 
 const Desktop = () => {
+
+    const [activeShortcut, setActiveShortcut] = useState('')
+
+    const onShortcutClick = (label: string) => {
+        console.log(label)
+        setActiveShortcut(label)
+    }
+
     return (
-        <div>
+        <div className={styles.desktop}>
             {shortcuts.map((elt, index) => (
-                <Shortcut key={index} icon={elt.icon} label={elt.label} />
+                <Shortcut onClick={onShortcutClick} key={index} icon={elt.icon} label={elt.label} active={activeShortcut === elt.label} />
             ))}
         </div>
     )
