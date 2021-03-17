@@ -19,10 +19,10 @@ const Navbar = () => {
             <div className={styles.left}>
                 {/* Window icon */}
                 <div onMouseOver={()=>setWindowSrc(WINDOW_START_HOVER_SRC)} onMouseOut={()=>setWindowSrc(WINDOW_START_SRC)} className={styles['nav-item']}>
-                    <img  src={windowSrc}/>
+                    <img  src={process.env.assetPath + windowSrc}/>
                 </div>
                 <div onMouseOver={()=>setTaskViewSrc(TASK_VIEW_HOVER_SRC)} onMouseOut={()=>setTaskViewSrc(TASK_VIEW_SRC)} className={styles['nav-item']}>
-                    <img src={taskViewSrc} />
+                    <img src={process.env.assetPath + taskViewSrc} />
                 </div>
             </div>
         

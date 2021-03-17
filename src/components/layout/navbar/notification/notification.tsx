@@ -98,7 +98,7 @@ const Notification = () => {
     return (
         <>
             <div className={`nav-item ${styles.notification}`} onClick={() => setShow(true)}>
-                <img alt="" src="/assets/icons/sms.svg" />
+                <img alt="" src={`${process.env.assetPath}/assets/icons/sms.svg`} />
             </div>
             <Modal className={`nav-modal`} show={show} onHide={() => setShow(false)} animation={false} keyboard={false}>
                 <Modal.Body className={styles['modal-content']}>
