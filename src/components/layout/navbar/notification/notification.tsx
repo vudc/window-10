@@ -9,7 +9,7 @@ interface Utility {
     active: boolean
 }
 
-const items: Utility[] = [
+let items: Utility[] = [
     {
         icon: '/assets/icons/smartphone-tablet.svg',
         label: 'Tablet mode',
@@ -94,6 +94,8 @@ const items: Utility[] = [
 
 const Notification = () => {
     const [show, setShow] = useState(false)
+
+    items.forEach((item: Utility) => (item.icon = process.env.assetPath + item.icon))
 
     return (
         <>
