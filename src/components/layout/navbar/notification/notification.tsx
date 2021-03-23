@@ -94,9 +94,6 @@ let items: Utility[] = [
 
 const Notification = () => {
     const [show, setShow] = useState(false)
-
-    items.forEach((item: Utility) => (item.icon = process.env.assetPath + item.icon))
-
     return (
         <>
             <div className={`nav-item ${styles.notification}`} onClick={() => setShow(true)}>
