@@ -32,9 +32,8 @@ const Navbar = () => {
                 <Network />
                 <Speaker />
                 <SwichLanguage /> 
-                <div className={`${styles['nav-item']} ${styles.date}`}>
+                <div className={`nav-item ${styles.date}`}>
                     4:22 PM 
- 
                 </div>
                 <Notification />
                 <div className={styles.clear}>  </div>

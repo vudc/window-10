@@ -1,4 +1,44 @@
 .modal-content {
+    padding: 0;
     height: 560px;
     width: 360px;
+    overflow-y: scroll;
+   
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    hr {
+        border-top: 1px solid rgba(255, 255, 255, 0.199);
+        width: 96%;
+        margin: 12px auto;
+    }
+
+    .item {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        &:hover {
+            cursor: default;
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+        img {
+            margin-left: 6px;
+            width: 26px;
+        }
+        .content {
+            padding-left: 12px;
+            .name {
+                font-size: 16px;
+                font-weight: 300;
+            }
+            .status {
+                color: gray;
+                font-size: 15px;
+            }
+        }
+    }
 }

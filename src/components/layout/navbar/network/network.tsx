@@ -3,39 +3,66 @@ import { Modal, Row, Col } from 'react-bootstrap'
 import styles from './network.module.scss'
 
 interface ItemNetWorkProps {
+    key: number
     label: string
-    active: boolean
-    onClick? : any
+    active?: boolean
+    onClick?: any
+    className?: string
+    contentClassName?: string
 }
 
 const NETWORKS = [
     {
-        label: 'Public wifi',
+        key: 1,
+        label: 'COFFEE HOUSE',
         active: false
     },
     {
-        label: 'Public wifi',
+        key: 2,
+        label: 'Public_wifi',
         active: false
     },
     {
-        label: 'Public wifi',
+        key: 3,
+        label: 'UNKNOWN',
         active: false
     },
     {
-        label: 'Public wifi',
+        key: 4,
+        label: 'private_wifi',
+        active: false
+    },
+    {
+        key: 5,
+        label: 'UNKNOWN',
+        active: false
+    },
+    {
+        key: 6,
+        label: 'private_wifi',
+        active: false
+    },
+    {
+        key: 7,
+        label: 'UNKNOWN',
+        active: false
+    },
+    {
+        key: 8,
+        label: 'private_wifi',
         active: false
     }
 ]
 
-const NetworkItem = ({ label, active }: ItemNetWorkProps) => {
+const NetworkItem = ({ label, active, className, contentClassName }: ItemNetWorkProps) => {
     return (
-        <Row>
-            <Col md="2">
+        <Row className={className || ''} noGutters>
+            <Col md="1">
                 <img alt="" src={`${process.env.assetPath}/assets/icons/network.ico`} />
             </Col>
-            <Col md="10">
+            <Col md="11" className={contentClassName}>
                 <div className={styles.name}>{label}</div>
-                <div className={styles.status}>Secured</div>
+                <div className={styles.status}>{active ? 'Connected' : 'Secured'}</div>
             </Col>
         </Row>
     )
@@ -48,11 +75,21 @@ const Network = () => {
             <div className={`nav-item`} onClick={() => setShow(true)}>
                 <img alt="" src={`${process.env.assetPath}/assets/icons/network2.ico`} />
             </div>
-            <Modal className={`nav-modal`} show={true} onHide={() => setShow(false)} animation={false} keyboard={false}>
+            <Modal className={`nav-modal`} show={show} onHide={() => setShow(false)} animation={false} keyboard={false}>
                 <Modal.Body className={styles['modal-content']}>
                     <div>
-                        {NETWORKS.map(({ label, active }: ItemNetWorkProps) => (
-                            <NetworkItem label={label} active={active} />
+                        <NetworkItem label="NAME" className={styles.item} contentClassName={styles.content} key={0} active={true} />
+
+                        <hr />
+
+                        {NETWORKS.map(({ label, active, key }: ItemNetWorkProps) => (
+                            <NetworkItem
+                                className={styles.item}
+                                contentClassName={styles.content}
+                                label={label}
+                                active={active}
+                                key={key}
+                            />
                         ))}
                     </div>
                 </Modal.Body>

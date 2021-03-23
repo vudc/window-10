@@ -12,5 +12,8 @@
     "editor.tabSize": 4,
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
-    "typescript.preferences.importModuleSpecifier": "relative"
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13
 }
