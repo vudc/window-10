@@ -1,6 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import './variables';
 @import './navbar';
 @import './modal';
+
 body {
     background-color: #f3f3f3;
     font-size: 12px;
@@ -15,3 +20,4 @@ body {
         background-color: rgba(255, 255, 255, 0.1);
     }
 }
+

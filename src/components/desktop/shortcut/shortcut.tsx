@@ -4,12 +4,17 @@ interface ShortcutProps {
     icon: string
     label: string
     active?: boolean
-    onClick: any
+    onClick: (label: string) => void
+    onDoubleClick?: (label: string) => void
 }
 
-const Shortcut = ({ icon, label, active, onClick }: ShortcutProps) => {
+const Shortcut = ({ icon, label, active, onClick, onDoubleClick }: ShortcutProps) => {
     return (
-        <div onClick={() => onClick(label)} className={`${styles.shortcut} ${active ? styles.active : ''}`}>
+        <div
+            onDoubleClick={() => { if (typeof onDoubleClick === 'function') onDoubleClick(label) }}
+            onClick={() => onClick(label)}
+            className={`${styles.shortcut} ${active ? styles.active : ''}`}
+        >
             <img src={icon} alt="" />
             <p>{label}</p>
         </div>

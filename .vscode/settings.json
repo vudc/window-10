@@ -1,7 +1,6 @@
 {
     "workbench.tree.indent": 30,
     "workbench.colorCustomizations": {},
-    "editor.renderIndentGuides": true,
     "workbench.tree.renderIndentGuides": "always",
     "editor.autoClosingQuotes": "always",
 
@@ -13,7 +12,7 @@
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
     "typescript.preferences.importModuleSpecifier": "relative",
-    "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "editor.fontSize": 13
+    // "editor.fontSize": 13,
+    "editor.guides.indentation": true
 }
