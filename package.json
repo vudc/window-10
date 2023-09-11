@@ -14,19 +14,23 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^4.6.0",
     "classnames": "^2.2.6",
+    "eslint-config-next": "^13.4.19",
     "firebase": "^8.2.7",
     "framer-motion": "^3.10.5",
-    "next": "10.0.7",
-    "react": "17.0.1",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
     "react-bootstrap": "^1.5.0",
-    "react-dom": "17.0.1",
+    "react-dom": "^18.2.0",
     "sass": "^1.32.7"
   },
   "devDependencies": {
     "@types/node": "^14.14.28",
-    "@types/react": "^17.0.2",
+    "@types/react": "18.0.17",
     "@types/react-dom": "^17.0.2",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
     "redux-devtools-extension": "^2.13.8",
-    "typescript": "^4.1.5"
+    "tailwindcss": "^3.3.2",
+    "typescript": "4.7.4"
   }
 }
