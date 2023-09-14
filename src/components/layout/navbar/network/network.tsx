@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Modal, Row, Col } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
+import Image from 'next/image'
 import styles from './network.module.scss'
 
 interface ItemNetWorkProps {
@@ -56,15 +57,23 @@ const NETWORKS = [
 
 const NetworkItem = ({ label, active, className, contentClassName }: ItemNetWorkProps) => {
     return (
-        <Row className={className || ''} noGutters>
-            <Col md="1">
-                <img alt="" src={`${process.env.assetPath}/assets/icons/network.ico`} />
-            </Col>
-            <Col md="11" className={contentClassName}>
+        <div className={`flex ${className}`}>
+            <div className='relative w-7 h-7'>
+                <Image className='shrink-0 grow-0' alt="" src={`${process.env.assetPath}/assets/icons/network.ico`} fill />
+            </div>
+            <div className={contentClassName}>
                 <div className={styles.name}>{label}</div>
                 <div className={styles.status}>{active ? 'Connected' : 'Secured'}</div>
-            </Col>
-        </Row>
+            </div>
+        </div>
+        // <Row className={className || ''} noGutters>
+        //     <Col md="1">
+        //         <img alt="" src={`${process.env.assetPath}/assets/icons/network.ico`} />
+        //     </Col>
+        //     <Col md="11" className={contentClassName}>
+
+        //     </Col>
+        // </Row>
     )
 }
 

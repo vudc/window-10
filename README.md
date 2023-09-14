@@ -11,7 +11,8 @@ I've always been interested in working with CSS.
 # Stack
 
 - Framework - Next.js
-- Component Library - React Bootstrap
+- Animation Library - framer-motion
+- CSS library - Tailwind
 - Styling Solution - SCSS.
 
 
