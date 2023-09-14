@@ -2,7 +2,7 @@
 
 This open source project aims to replicate some of the Window 10's desktop experience on web.
 
-🔗 [https://congvu.net/window-10](https://congvu.net/window-10)
+🔗 [https://window-10.congvu.net](https://window-10.congvu.net)
 
 # Why
 
